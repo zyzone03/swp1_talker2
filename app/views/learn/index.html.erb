@@ -1,1 +1,11 @@
-<h1>learn index 페이지입니다.</h1>
+<div class="learn-page">
+  <text align='center'><h1> TEACH </h1></text>
+  <%= form_tag '/learn', method: 'post', class: "learn-form" do %>
+    <textarea placeholder="가르칠 말을 적어주세요." name="ask" rows="5" required></textarea>
+    <textarea placeholder="답할 말을 적어주세요." name="answer" rows="5" required></textarea>
+    <input type="submit" value="TEACH">
+  <% end %>
+  <a href="/">
+    <div class="back-button">홈으로</div>
+  </a>
+</div>
